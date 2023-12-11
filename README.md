@@ -8,7 +8,6 @@ Note Encryption: Uses AES-256 encryption in CBC mode for note content.
 Public and Private Key Cryptography: For enhanced security in user data encryption and decryption.
 Secure Session Management: PHP sessions are used to manage user sessions securely.
 Installation
-Clone the repository: git clone https://github.com/your-username/secure-notes.git
 Navigate to the project directory: cd secure-notes
 Install dependencies (if any).
 Import the SQL file into your database
