@@ -1,0 +1,140 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #AEC3B0; /* Soft green background */
+    color: #124559; /* Dark blue text color */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #124559; /* Dark blue background for buttons */
+    color: #ffffff; /* White text color */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+input[type='text'],
+input[type='password'] {
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+#login-form,
+#register-form {
+    background-color: #EFF6E0; /* Soft background color */
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 400px; /* Maximum width of forms */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+#login-register-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Full viewport height for centering */
+    background-color: #EFF6E0; /* Light background color */
+}
+
+/* Dashboard layout */
+#dashboard-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Sidebar Styles */
+#notes-sidebar {
+    width: 250px;
+    background-color: #01161E; /* Dark teal for the sidebar */
+    color: #EFF6E0; /* Lightest color for sidebar text */
+    padding: 20px;
+    height: calc(100vh - 40px); /* Full height minus padding */
+    overflow-y: auto; /* Scroll for overflow content */
+}
+
+.note-summary {
+    background-color: #5B9092; /* Medium teal for note background */
+    color: #EFF6E0; /* Lightest color for text */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #124559; /* Separates note names */
+    cursor: pointer;
+}
+
+.note-summary:hover {
+    background-color: #124559; /* Dark blue for hover state */
+}
+
+/* Note Editor Styles */
+#note-editor {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #EFF6E0; /* Lightest color for editor background */
+}
+
+#edit-note-title,
+#edit-note-content {
+    width: calc(100% - 40px); /* Full width minus padding */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #124559; /* Border color from palette */
+}
+
+#edit-note-content {
+    height: 65vh; /* Height for content area */
+    resize: vertical;
+}
+
+/* Save Changes Button */
+#save-changes-btn {
+    padding: 10px 20px;
+    background-color: #124559; /* Dark blue for the button */
+    color: #EFF6E0; /* Light color for the text */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#save-changes-btn:hover {
+    background-color: #01161E; /* Darker shade for hover effect */
+}
+
+h2 {
+    padding: 5px 5px;
+    color: #124559; /* Light color for the text */
+    font-size: 35px;
+    display: inline;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #dashboard-container {
+        flex-direction: column;
+    }
+
+    #notes-sidebar,
+    #note-editor {
+        width: 100%;
+        height: auto;
+        
+    }
+}
