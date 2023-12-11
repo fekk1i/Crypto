@@ -1,19 +1,30 @@
-Secure Notes Web Application
-Introduction
-Secure Notes is a web application designed for secure note-taking and management. Utilizing advanced cryptographic techniques, it ensures the confidentiality and integrity of user data. This application is ideal for users who require a robust and reliable platform for secure notetaking.
+Project Title
+Secure note taking app
 
-Features
-User Authentication: Secure login system with password hashing.
-Note Encryption: Uses AES-256 encryption in CBC mode for note content.
-Public and Private Key Cryptography: For enhanced security in user data encryption and decryption.
-Secure Session Management: PHP sessions are used to manage user sessions securely.
-Installation
-Navigate to the project directory: cd secure-notes
-Install dependencies (if any).
-Import the SQL file into your database
+Description
+Noted is a web-focused application designed to offer a secure platform for note-taking. It integrates advanced cryptographic methods for data protection, ensuring user privacy and data security.
+
+Getting Started
+Dependencies
+Web server (e.g., Apache, Nginx)
+PHP 8.2.12 or higher
+MySQL Database
+Modern Web Browser
+Installing
+Clone the repository: git clone https://github.com/fekk1i/Noted
 Configure your database in connect.php.
-Run the application on your preferred server.
-Usage
-Register a new account with a username and password.
-Log in to create, view, edit, or delete secure notes.
-Each note is encrypted using a session-based symmetric key.
+Import the SQL file into your database
+Executing Program
+Run your web server and navigate to the project's root directory.
+Access the application through your web browser.
+
+Help
+For issues related to installation or execution:
+Check PHP and MySQL server status.
+Ensure all PHP files are correctly placed.
+
+Authors
+[Ali Abdelhamid] - Initial Work - [AA2100274@tkh.edu.eg]
+Version History
+0.1: Initial Release
+0.2: Added asymmetric encryption, session management improvements.
